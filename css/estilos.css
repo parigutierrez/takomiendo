@@ -10,3 +10,11 @@
 .boton::before{
   clear:both;
 }
+
+#log{
+	border: 2px solid lightgrey;
+}
+
+.mt-5{
+	margin-top: 5%;
+}
