@@ -1,5 +1,12 @@
 /*inicia intro*/
 .logo-margin{
-  margin-top: 30vh;
-  
+
+}
+/*login*/
+.boton{
+  margin: 5vh 0vh;
+  padding:10% 10%;
+}
+.boton::before{
+  clear:both;
 }
