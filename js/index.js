@@ -1,6 +1,6 @@
 function cargarPagina() {
       setTimeout(function() {
-        var url = "../vistas/inicioSesion.html";
+        var url = "vistas/inicioSesion.html";
         $(location).attr("href",url);
         }, 4000)
 }
