@@ -8,28 +8,40 @@
 //   };
 // firebase.initializeApp(config);
 
-var mostrarMapa = function (coordenadas) {
-    var mapa = new google.maps.Map($('.mapa')[0], {
+window.onload = function() {
+	verificarCoords();
+};
+
+// verificar coordenadas
+var verificarCoords = function (e) {
+  	if (navigator.geolocation) {
+  		navigator.geolocation.getCurrentPosition(obtenerCoordenadas);
+  	} else {
+  		console.log("Actualice su navegador");
+  	}
+};
+
+  // Geolocalización
+  function obtenerCoordenadas(posicion) {
+    var coordenadas = {
+  		lat: posicion.coords.latitude,
+  		lng: posicion.coords.longitude
+  	};
+	console.log(coordenadas);
+  	initMap(coordenadas);
+
+  }
+
+  function initMap(coordenadas) {
+    var map = new google.maps.Map(document.getElementById("mapa"), {
       zoom: 18,
       center: coordenadas
     });
-    var marcadorPosicion = new google.maps.Marker({
-      position: coordenadas,
-      map: mapa
-    });
-}
-
-var cambiarUbicacion = function () {
-  var longitud = $(this).data("longitud");
-  var latitud = $(this).data("latitud");
-
-  var coordenadas = {
-    lat: latitud,
-    lng: longitud
-  };
-
-  mostrarMapa(coordenadas);
-}
+    var marker = new google.maps.Marker({
+          position: coordenadas,
+          map: map
+        });
+  }
 
 var restaurantes = [
 	{
