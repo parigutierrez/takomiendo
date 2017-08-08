@@ -15,6 +15,14 @@ function guardarUsuario(nombre, correo) {
 	localStorage.setItem('mail', correo);
 	// var lista = document.getElementById('lista-Usuarios');
 	// lista.innerHTML += '<li class="purple-text"><i class="material-icons white-text">face</i> ' + localStorage.getItem('name') + ' <i class="material-icons white-text">email</i> '+ localStorage.getItem('mail')+ '</li>'
+	cargarForm();
+}
+
+function cargarForm() {
+      setTimeout(function() {
+        var url = "../vistas/registro.html";
+        $(location).attr("href",url);
+	}, 2000)
 }
 
 function logIn(provider) {
@@ -24,7 +32,7 @@ function logIn(provider) {
 	  var user = result.user;
 	  console.log('user', user);
 	  console.log(user.displayName);
-	//   guardarUsuario(user.displayName, user.email);
+	  guardarUsuario(user.displayName, user.email);
 	}).catch(function(error) {
 	  var errorMessage = error.message;
 	  console.log('error', errorMessage);
