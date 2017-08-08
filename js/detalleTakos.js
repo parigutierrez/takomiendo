@@ -35,35 +35,35 @@ var restaurantes = [
 	{
 		"nombre": "Pizzas del Perro Negro",
 		"comida": "Pizzas",
-		"foto": "assets/img/pizza.jpg",
+		"foto": "https://dummyimage.com/100x100",
 		"direccion": "Calle Orizaba 4, Local B, Cuauhtémoc, Roma Norte, 06700 Ciudad de México, CDMX",
     "coordenadas" : {"lat":"19.416512" ,"lng": "-99.169656"}
 	},
 	{
 		"nombre": "Papa Guapa",
 		"comida": "Papas",
-		"foto": "assets/img/papa.jpg",
+		"foto": "https://dummyimage.com/100x100",
 		"direccion": "Calle Orizaba 4, Local B, Cuauhtémoc, Roma Norte, 06700 Ciudad de México, CDMX",
     "coordenadas" : {"lat":"19.419013" ,"lng": "-99.166943"}
 	},
 	{
 		"nombre": "Barracuda Dinner",
 		"comida": "Hamburguesas",
-		"foto": "assets/img/barracuda.jpg",
+		"foto": "https://dummyimage.com/100x100",
 		"direccion": "Av Nuevo León 4-A, Condesa, Cuauhtémoc, 06140 Ciudad de México, CDMX.",
     "coordenadas" : {"lat":"19.415995" ,"lng": "-99.169623"}
 	},
 	{
 		"nombre": "Moshi Moshi",
 		"comida": "Sushi",
-		"foto": "assets/img/moshi.jpg",
+		"foto": "https://dummyimage.com/100x100",
 		"direccion": "Plaza Villa de Madrid 22, Cuauhtémoc, Roma, 06700 Ciudad de México, CDMX.",
     "coordenadas" : {"lat":"19.419407" ,"lng": "-99.166622"}
 	},
 	{
 		"nombre": "Churrería El Moro",
 		"comida": "Churros y chocolate",
-		"foto": "assets/img/churros.jpg",
+		"foto": "https://dummyimage.com/100x100",
 		"direccion": "Eje Central Lázaro Cárdenas 42, Centro Histórico, Centro, 06000 Ciudad de México, CDMX",
     "coordenadas" : {"lat":"19.431437" ,"lng": "-99.141112"}
   }
