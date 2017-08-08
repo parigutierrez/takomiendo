@@ -1,0 +1,20 @@
+/*inicia intro*/
+.logo-margin{
+
+}
+/*login*/
+.boton{
+  margin: 5vh 0vh;
+  padding:10% 10%;
+}
+.boton::before{
+  clear:both;
+}
+
+#log{
+	border: 2px solid lightgrey;
+}
+
+.mt-5{
+	margin-top: 5%;
+}
